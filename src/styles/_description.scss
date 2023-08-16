@@ -1,0 +1,27 @@
+@use 'variaveis';
+
+.description {
+    display: flex;
+    padding-top: 64px;
+    margin: auto;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+    &__text {
+        &__item {
+            color: variaveis.$corTextoPrincipal;
+            font-size: 24px;
+            margin-left: 48px;
+            max-width: 440px;
+            padding-bottom: 48px;
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+                margin: 2px;
+            }
+        }
+    }
+}
